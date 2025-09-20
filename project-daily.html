@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buzzit Project</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ===== Buzzit Project Detail ===== */
+    .project-detail {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    /* الصورة الرئيسية */
+    .project-detail .main-image img {
+      max-width: 50%;        /* تصغير الصورة الرئيسية أيضاً إذا رغبت */
+      height: auto;
+      display: block;
+      margin: 0 auto 40px auto;
+    }
+
+    /* حاوية جميع الصور */
+    .screens {
+      display: flex;
+      flex-wrap: wrap;             /* تنتقل الصور لسطر جديد عند الحاجة */
+      justify-content: center;     /* توسيط الصور أفقياً */
+      gap: 25px;                   /* المسافة بين الصور */
+    }
+
+    /* كل صورة (تم تصغيرها) */
+    .screens img {
+      max-width: 20%;              /* <== تصغير عرض كل صورة */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    /* زر العودة */
+    .back-btn {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .back-btn:hover {
+      color: #555;
+    }
+
+    /* Responsive للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .screens img {
+        max-width: 80%;  /* صورة واحدة في الصف بحجم مناسب للجوال */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="projects.html" class="back-btn">← Back to Projects</a>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <section class="project-detail">
+
+    <!-- الصورة الرئيسية -->
+    <div class="main-image">
+      <img src="images/daily.png" alt="Daily Task Management Main Image">
+    </div>
+
+    <!-- صور الشاشات (أصغر حجماً) -->
+    <div class="screens">
+      <img src="images/d1.jpg" alt="Screen 1">
+      <img src="images/d2.png" alt="Screen 1">
+      <img src="images/d3.png" alt="Screen 1">
+      <img src="images/d4.png" alt="Screen 2">
+      <img src="images/d5.png" alt="Screen 1">
+      <img src="images/d6.png" alt="Screen 1">
+      <img src="images/d7.png" alt="Screen 1">
+      <img src="images/d8.png" alt="Screen 1">
+      <img src="images/d9.png" alt="Screen 1">
+      <img src="images/d10.png" alt="Screen 1">
+
+    </div>
+
+  </section>
+
+</body>
+</html>

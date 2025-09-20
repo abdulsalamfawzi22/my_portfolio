@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buzzit Project</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ===== Buzzit Project Detail ===== */
+    .project-detail {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    /* الصورة الرئيسية */
+    .project-detail .main-image img {
+      max-width: 50%;        /* تصغير الصورة الرئيسية أيضاً إذا رغبت */
+      height: auto;
+      display: block;
+      margin: 0 auto 40px auto;
+    }
+
+    /* حاوية جميع الصور */
+    .screens {
+      display: flex;
+      flex-wrap: wrap;             /* تنتقل الصور لسطر جديد عند الحاجة */
+      justify-content: center;     /* توسيط الصور أفقياً */
+      gap: 25px;                   /* المسافة بين الصور */
+    }
+
+    /* كل صورة (تم تصغيرها) */
+    .screens img {
+      max-width: 20%;              /* <== تصغير عرض كل صورة */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    /* زر العودة */
+    .back-btn {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .back-btn:hover {
+      color: #555;
+    }
+
+    /* Responsive للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .screens img {
+        max-width: 80%;  /* صورة واحدة في الصف بحجم مناسب للجوال */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="projects.html" class="back-btn">← Back to Projects</a>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <section class="project-detail">
+
+    <!-- الصورة الرئيسية -->
+    <div class="main-image">
+      <img src="images/trip.png" alt="Trip Assistant Main Image">
+    </div>
+
+    <!-- صور الشاشات (أصغر حجماً) -->
+    <div class="screens">
+      <img src="images/t1.JPG" alt="Screen 1">
+      <img src="images/t2.JPG" alt="Screen 1">
+      <img src="images/t3.JPG" alt="Screen 1">
+      <img src="images/t4.JPG" alt="Screen 2">
+      <img src="images/t5.JPG" alt="Screen 1">
+      <img src="images/t6.JPG" alt="Screen 1">
+      <img src="images/t7.JPG" alt="Screen 1">
+      <img src="images/t8.JPG" alt="Screen 1">
+      <img src="images/t9.JPG" alt="Screen 1">
+      <img src="images/t10.JPG" alt="Screen 1">
+      <img src="images/t11.JPG" alt="Screen 1">
+      <img src="images/t12.JPG" alt="Screen 1">
+      <img src="images/t13.JPG" alt="Screen 1">
+      <img src="images/t14.JPG" alt="Screen 1">
+      <img src="images/t15.png" alt="Screen 1">
+      <img src="images/t16.png" alt="Screen 1">
+      <img src="images/t17.png" alt="Screen 1">
+      <img src="images/t18.png" alt="Screen 1">
+      <img src="images/t19.png" alt="Screen 1">
+      <img src="images/t20.png" alt="Screen 1">
+      <img src="images/t21.png" alt="Screen 1">
+      <img src="images/t22.png" alt="Screen 1">
+      <img src="images/t23.png" alt="Screen 1">
+
+
+    </div>
+
+  </section>
+
+</body>
+</html>

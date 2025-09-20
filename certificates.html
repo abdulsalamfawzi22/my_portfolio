@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificates</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #f4f4f9;
+      padding: 15px 0;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-links a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #4cafef;
+    }
+
+    /* Header */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .page-header h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    .page-header p {
+      color: #666;
+    }
+
+    /* Shared Card Style */
+    .certificate-card,
+    .university-cert {
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .certificate-card:hover,
+    .university-cert:hover {
+      transform: translateY(-5px);
+    }
+    .certificate-card img,
+    .university-cert img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .cert-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .cert-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+    .cert-info p {
+      color: #555;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+    .cert-info .btn {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #000;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .cert-info .btn:hover {
+      background: #444;
+    }
+
+    /* Courses layout */
+    .courses-header {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 1.4rem;
+    }
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="certificates.html">Certificates</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>My Certificates & Courses</h1>
+    <p>Academic Degree and Professional Training</p>
+  </header>
+
+  <!-- University Certificate -->
+  <section class="university-cert">
+    <img src="image/soon.png" alt="Bachelor Certificate">
+    <div class="cert-info">
+      <h3>Bachelor of Software Engineering</h3>
+      <p>Philadelphia University – 2025-10-10</p>
+      <a href="docs/bachelor.pdf" target="_blank" class="btn">View PDF</a>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <h2 class="courses-header">Courses & Training</h2>
+  <section class="courses">
+    <div class="certificate-card">
+      <img src="image/flutterba.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter Mobile Development</h3>
+        <p>2025-03-10</p>
+        <a href="docs/certificate_Abdulsalam fawzi alfarra.pdf" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    <div class="certificate-card">
+      <img src="image/xp.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Experience</h3>
+        <p>2025-03-10</p>
+        <a href="docs/experience_عبد السلام فوزي الفرا .pdf" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/English4.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>English</h3>
+        <p>2021-11-04</p>
+        <a href="docs/flutter-course.pdf" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    <div class="certificate-card">
+      <img src="image/dart101.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Dart 101</h3>
+        <p>2025-08-12</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1755007758_2736a641-be8f-44af-80d5-097000bf4d82.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/dart102.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>dart 102</h3>
+        <p>2025-08-14</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1755120645_8cf71fc5-4df6-4252-99e5-542444297cbf.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/dart103.png" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Dart 103</h3>
+        <p>2025-08-14</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1755205002_b1b405b0-9324-40e2-8abf-2649a213e7e7.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     </div>
+     <div class="certificate-card">
+      <img src="image/flutter101.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter 101</h3>
+        <p>2025-07-28</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1753674573_9e5283ab-4c30-4f31-8394-d84aa428fe06.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div> <div class="certificate-card">
+      <img src="image/flutter102.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter 102</h3>
+        <p>2025-08-01</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1754070237_9de0ef3d-8882-4811-8ca5-5ba246530cf8.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/flutter103.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter 103</h3>
+        <p>2025-08-04</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1754331692_4cd8acee-2caa-4ca8-ae9b-66373321a386.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/flutter104.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter 104</h3>
+        <p>2025-08-08</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1754661817_a598f110-768e-4438-a203-ef62a249bc9e.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/flutter105.jpg" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Flutter 105</h3>
+        <p>2025-08-10</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9edf1472-0eaa-466a-8f70-9ad6c3ae8540/1754783180_5952400b-42a5-46a6-aabc-20e09ac88d8e.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/git101.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Git 101</h3>
+        <p>2024-11-10</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338824_55467131-c044-4978-b6b0-6c088c09e9f6.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/git102.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>Git 102</h3>
+        <p>2024-11-10</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338824_45f800b1-bcff-4522-8bae-6c8c28050588.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    </div>
+     <div class="certificate-card">
+      <img src="image/sql101.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>SQL 101</h3>
+        <p>2024-11-21</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338824_8194df0c-6b14-4863-94e1-585a66aa3aa3.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div></div>
+     <div class="certificate-card">
+      <img src="image/sql102.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>SQL 102</h3>
+        <p>2024-11-22</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338823_677a2f2f-f860-4026-87e0-beebb4a79cea.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div></div>
+     <div class="certificate-card">
+      <img src="image/sql103.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>SQL 103</h3>
+        <p>2024-11-23</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338824_4af40f48-e5c5-44a8-87c7-3362d89cb574.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+    </div></div>
+     <div class="certificate-card">
+      <img src="image/uiux.PNG" alt="Flutter Course">
+      <div class="cert-info">
+        <h3>UI/UX</h3>
+        <p>2024-11-11</p>
+        <a href="https://assets.safcsp.cloud/public/certificates/9d92e85b-fe69-4f78-85d0-d4e3821816fc/1758338824_92a6b6d0-fb30-4233-8997-338f33625f5f.png" target="_blank" class="btn">View Certificate</a>
+      </div>
+    </div>
+
+
+
+
+    <!-- أضف المزيد من الدورات هنا -->
+  </section>
+</body>
+</html>

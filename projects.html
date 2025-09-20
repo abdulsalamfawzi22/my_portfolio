@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container center-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/buzzil.png" alt="Project 1">
+        <h3>Buzzit</h3>
+        <p>
+          BuzzIt – Flutter app for booking barber appointments, featuring interactive UI/UX
+          and admin schedule management.
+        </p>
+        <a href="project-buzzit.html" class="view-btn">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/daily.png" alt="Project 2">
+        <h3>Daily Task</h3>
+        <p>
+          Daily Tasks Manager – Flutter app for managing daily tasks with priorities, deadlines,
+          notifications, and points system.
+        </p>
+        <a href="project-daily.html" class="view-btn">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/trip.png" alt="Project 3">
+        <h3>Trip Assistant</h3>
+        <p>
+          Trip Assistant – Flutter mobile app providing fuel delivery, towing, and battery charging
+          services with location tracking and invoice generation.
+        </p>
+        <a href="project-trip.html" class="view-btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // عند الضغط على أي زر View Project نخفيه قبل الانتقال
+    document.querySelectorAll('.view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.style.display = 'none'; // إخفاء الزر المضغوط
+        // بعد هذا، المتصفح ينتقل تلقائياً إلى رابط المشروع
+      });
+    });
+  </script>
+</body>
+</html>
