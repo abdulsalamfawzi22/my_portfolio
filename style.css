@@ -136,7 +136,7 @@ body {
 }
 :root {
   --color: #FFD700; /* ذهبي */
-  --shadow: #5b0202; /* برتقالي للظل */
+  --shadow: #02095b; /* برتقالي للظل */
   --glare: hsla(0, 0%, 3%, 0.75);
   --font-size: 2.50rem;
   --transition: 0.2s;
